@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body;
+  }
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(208, 188, 255, 0.15) transparent;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(53, 52, 56, 0.4);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .glass-panel {
+    background: rgba(31, 31, 34, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .gradient-text {
+    background: linear-gradient(135deg, #d0bcff 0%, #adc6ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .editorial-gradient {
+    background: linear-gradient(135deg, #d0bcff 0%, #adc6ff 100%);
+  }
+  .glow-primary {
+    box-shadow: 0 0 24px 0 rgba(208, 188, 255, 0.15);
+  }
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-secondary text-on-primary font-bold rounded-full transition-all hover:scale-105 active:scale-95;
+  }
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Hide number input spinners */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+@keyframes modal-enter {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-modal-enter {
+  animation: modal-enter 200ms ease-out;
+}

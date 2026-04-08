@@ -1,0 +1,36 @@
+{
+  "name": "sierra",
+  "version": "1.0.0",
+  "description": "Sierra is a next-generation personal finance platform designed to elevate how you manage money. It seamlessly tracks expenses, monitors investments, and delivers intelligent insights to help you build stronger financial habits. With powerful analytics and a refined, premium fintech experience, Sierra transforms everyday financial decisions into smart, data-driven growth.",
+  "main": "index.js",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChickenWings-0/Sierra.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChickenWings-0/Sierra/issues"
+  },
+  "homepage": "https://github.com/ChickenWings-0/Sierra#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.3.3",
+    "sierra-workspace": "file:.."
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

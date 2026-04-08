@@ -1,0 +1,14 @@
+{
+  "name": "sierra-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Monorepo workspace for Sierra backend and frontend applications.",
+  "scripts": {
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "build:frontend": "npm --prefix frontend run build",
+    "preview:frontend": "npm --prefix frontend run preview",
+    "start:backend": "npm --prefix backend run start",
+    "lint:frontend": "npm --prefix frontend run lint"
+  }
+}

@@ -12,7 +12,7 @@ const app = express();
 // ✅ FIXED CORS
 app.use(
   cors({
-    origin: "https://finora.vercel.app",
+    origin: "*",
     credentials: true,
   })
 );
